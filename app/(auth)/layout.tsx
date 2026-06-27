@@ -8,10 +8,8 @@ export default function AuthLayout({
 }) {
   return (
     <div className="relative flex min-h-screen bg-white dark:bg-zinc-950">
-
       {/* LEFT PANEL — Brand identity panel, hidden on mobile */}
       <div className="relative hidden w-1/2 overflow-hidden bg-zinc-900 lg:flex lg:flex-col lg:justify-between">
-
         {/* Gradient background */}
         <div className="absolute inset-0 bg-gradient-to-br from-[#1e3a5f] via-[#2a4f7a] to-[#0f2440] opacity-95" />
 
@@ -21,23 +19,39 @@ export default function AuthLayout({
 
         {/* Content overlay */}
         <div className="relative z-10 flex h-full flex-col justify-between p-12 text-white xl:p-16">
-
           {/* Brand name */}
           <Link
             href="/"
-            aria-label="pr Inspector — go to homepage"
+            aria-label="PR  Inspector — go to homepage"
             className="flex items-center gap-2 w-fit"
           >
             {/* Shield icon */}
-            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#c5a44e" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M2 15C2 17 5 19 12 19C19 19 22 17 22 15" stroke="#c5a44e" fill="#1e3a5f" />
-              <path d="M4 14V11C4 7 7 5 12 5C17 5 20 7 20 11V14" fill="#1e3a5f" stroke="#1e3a5f" />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="28"
+              height="28"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#c5a44e"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path
+                d="M2 15C2 17 5 19 12 19C19 19 22 17 22 15"
+                stroke="#c5a44e"
+                fill="#1e3a5f"
+              />
+              <path
+                d="M4 14V11C4 7 7 5 12 5C17 5 20 7 20 11V14"
+                fill="#1e3a5f"
+                stroke="#1e3a5f"
+              />
               <circle cx="12" cy="10" r="2" fill="#c5a44e" stroke="#c5a44e" />
               <path d="M10 14h4" stroke="#c5a44e" strokeWidth="2" />
             </svg>
             <span className="text-2xl font-black tracking-tight">
-              Code{" "}
-              <span className="text-[#c5a44e]">Inspector</span>
+              Code <span className="text-[#c5a44e]">Inspector</span>
             </span>
           </Link>
 
@@ -49,9 +63,9 @@ export default function AuthLayout({
               <span className="text-[#c5a44e]">Before your teammates do.</span>
             </h1>
             <p className="text-lg font-medium text-white/80">
-              Connect GitHub and let pr Inspector review your next pull
-              request in under 30 seconds. Bugs caught. Security flagged.
-              Teammates impressed.
+              Connect GitHub and let PR Inspector review your next pull request
+              in under 30 seconds. Bugs caught. Security flagged. Teammates
+              impressed.
             </p>
 
             {/* Social proof strip */}
@@ -83,9 +97,27 @@ export default function AuthLayout({
         <div className="mx-auto w-full max-w-sm lg:max-w-md">
           {/* Mobile-only brand header */}
           <div className="mb-8 flex items-center gap-2 lg:hidden">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#c5a44e" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M2 15C2 17 5 19 12 19C19 19 22 17 22 15" stroke="#c5a44e" fill="#1e3a5f" />
-              <path d="M4 14V11C4 7 7 5 12 5C17 5 20 7 20 11V14" fill="#1e3a5f" stroke="#1e3a5f" />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#c5a44e"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path
+                d="M2 15C2 17 5 19 12 19C19 19 22 17 22 15"
+                stroke="#c5a44e"
+                fill="#1e3a5f"
+              />
+              <path
+                d="M4 14V11C4 7 7 5 12 5C17 5 20 7 20 11V14"
+                fill="#1e3a5f"
+                stroke="#1e3a5f"
+              />
               <circle cx="12" cy="10" r="2" fill="#c5a44e" stroke="#c5a44e" />
               <path d="M10 14h4" stroke="#c5a44e" strokeWidth="2" />
             </svg>
@@ -93,7 +125,7 @@ export default function AuthLayout({
               href="/"
               className="text-xl font-black tracking-tight text-zinc-900 dark:text-white"
             >
-              pr Inspector
+              PR Inspector
             </Link>
           </div>
 

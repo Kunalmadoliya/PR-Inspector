@@ -1,4 +1,4 @@
-﻿# Contributing to pr Inspector
+﻿# Contributing to PR Inspector
 
 First of all â€” thank you for taking the time to contribute. Every bug report, suggestion, and pull request makes the inspector sharper.
 
@@ -77,6 +77,7 @@ We use [Conventional Commits](https://www.conventionalcommits.org/):
 ```
 
 **Types:**
+
 - `feat` â€” A new feature
 - `fix` â€” A bug fix
 - `docs` â€” Documentation changes only
@@ -87,6 +88,7 @@ We use [Conventional Commits](https://www.conventionalcommits.org/):
 - `chore` â€” Build, config, dependency changes
 
 **Examples:**
+
 ```
 feat(reviews): add inline comment posting for security findings
 fix(auth): handle GitHub OAuth callback error on invalid state
@@ -102,7 +104,7 @@ chore(deps): upgrade Next.js to 16.3.0
 - **Describe your changes** clearly in the PR description.
 - **Link to issues** using `Closes #123` or `Fixes #123`.
 - **Keep PRs small.** Reviewers are humans (mostly). Large PRs take longer.
-- All PRs will be reviewed by pr Inspector itself before a human looks at it. Practice what we preach.
+- All PRs will be reviewed by PR Inspector itself before a human looks at it. Practice what we preach.
 
 ---
 
@@ -134,8 +136,8 @@ Open a [GitHub Issue](https://github.com/Kunalmadoliya/pr-inspector/issues/new) 
 - **Tailwind CSS** â€” Use the design tokens in `globals.css`. Avoid arbitrary values where a token exists.
 - **Components** â€” Keep components focused. If it needs a second `useEffect`, it probably needs to be two components.
 - **Naming** â€” Use descriptive names. Abbreviations are only acceptable if they're universally understood (`URL`, `ID`, `PR`).
-- **Comments** â€” Comment the *why*, not the *what*. If code is self-explanatory, no comment needed.
+- **Comments** â€” Comment the _why_, not the _what_. If code is self-explanatory, no comment needed.
 
 ---
 
-*Built with â¤ï¸ and mild sarcasm. We inspect every PR before it reaches production.*
+_Built with â¤ï¸ and mild sarcasm. We inspect every PR before it reaches production._

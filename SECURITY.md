@@ -2,10 +2,10 @@
 
 ## Supported Versions
 
-| Version | Supported |
-|---|---|
-| Latest (`main`) | ✅ |
-| All others | ❌ |
+| Version         | Supported |
+| --------------- | --------- |
+| Latest (`main`) | ✅        |
+| All others      | ❌        |
 
 We only provide security fixes for the latest version. Keep your deployment up to date.
 
@@ -15,7 +15,7 @@ We only provide security fixes for the latest version. Keep your deployment up t
 
 **Please do not report security vulnerabilities via public GitHub Issues.**
 
-If you discover a security vulnerability in pr Inspector, please report it responsibly:
+If you discover a security vulnerability in PR Inspector, please report it responsibly:
 
 ### Option 1: GitHub Private Vulnerability Reporting (preferred)
 
@@ -26,6 +26,7 @@ Use the [Report a vulnerability](https://github.com/Kunalmadoliya/pr-inspector/s
 Send a report to: **madoliyakunal2005@gmail.com**
 
 Include the following in your report:
+
 - A description of the vulnerability
 - Steps to reproduce the issue
 - The potential impact
@@ -72,4 +73,4 @@ We follow [responsible disclosure](https://en.wikipedia.org/wiki/Coordinated_vul
 
 ---
 
-*pr Inspector reviews every commit. We take security seriously. We take security seriously.*
+_PR Inspector reviews every commit. We take security seriously. We take security seriously._

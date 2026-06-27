@@ -1,7 +1,6 @@
 ﻿<div align="center">
 
-
-<h1>ðŸ›¡ï¸ pr Inspector</h1>
+<h1> PR  Inspector</h1>
 
 <p><strong>Your PR's personal inspector. Patrolling every commit â€” before your teammates do.</strong></p>
 
@@ -21,9 +20,9 @@
 
 ---
 
-## What is pr Inspector?
+## What is PR Inspector?
 
-**pr Inspector** is an AI-powered code review platform that reviews your GitHub pull requests the moment they are opened.
+**PR Inspector** is an AI-powered code review platform that reviews your GitHub pull requests the moment they are opened.
 
 It detects bugs, identifies security vulnerabilities, suggests improvements, and posts its findings as inline PR comments â€” before your teammates even look at the diff.
 
@@ -31,7 +30,7 @@ Think of it as a senior engineer who is always available, never tired, never in 
 
 ## Why it exists
 
-Manual code review is slow, inconsistent, and expensive. Senior engineers spend hours every week reviewing boilerplate issues that a machine could catch in seconds. pr Inspector handles the mechanical review work so your team can focus on architectural decisions, product thinking, and shipping.
+Manual code review is slow, inconsistent, and expensive. Senior engineers spend hours every week reviewing boilerplate issues that a machine could catch in seconds. PR Inspector handles the mechanical review work so your team can focus on architectural decisions, product thinking, and shipping.
 
 ## Who it is for
 
@@ -55,17 +54,17 @@ Manual code review is slow, inconsistent, and expensive. Senior engineers spend 
 
 ## Tech Stack
 
-| Layer | Technology | Purpose |
-|---|---|---|
-| **Framework** | [Next.js 16](https://nextjs.org/) (App Router) | Full-stack React framework |
-| **Language** | [TypeScript 5](https://www.typescriptlang.org/) | Type safety across the entire codebase |
-| **UI** | [Tailwind CSS v4](https://tailwindcss.com/) + [Shadcn UI](https://ui.shadcn.com/) | Design system and components |
-| **Icons** | [Phosphor Icons](https://phosphoricons.com/) | Icon library |
-| **ORM** | [Prisma 7](https://www.prisma.io/) | Type-safe database access |
-| **Database** | [PostgreSQL](https://www.postgresql.org/) | Primary data store |
-| **Auth** | [Better Auth](https://better-auth.com/) | Sessions, OAuth, email/password |
-| **State** | [TanStack Query v5](https://tanstack.com/query/latest) | Server state and caching |
-| **Package Manager** | [pnpm 11](https://pnpm.io/) | Fast, disk-efficient installs |
+| Layer               | Technology                                                                        | Purpose                                |
+| ------------------- | --------------------------------------------------------------------------------- | -------------------------------------- |
+| **Framework**       | [Next.js 16](https://nextjs.org/) (App Router)                                    | Full-stack React framework             |
+| **Language**        | [TypeScript 5](https://www.typescriptlang.org/)                                   | Type safety across the entire codebase |
+| **UI**              | [Tailwind CSS v4](https://tailwindcss.com/) + [Shadcn UI](https://ui.shadcn.com/) | Design system and components           |
+| **Icons**           | [Phosphor Icons](https://phosphoricons.com/)                                      | Icon library                           |
+| **ORM**             | [Prisma 7](https://www.prisma.io/)                                                | Type-safe database access              |
+| **Database**        | [PostgreSQL](https://www.postgresql.org/)                                         | Primary data store                     |
+| **Auth**            | [Better Auth](https://better-auth.com/)                                           | Sessions, OAuth, email/password        |
+| **State**           | [TanStack Query v5](https://tanstack.com/query/latest)                            | Server state and caching               |
+| **Package Manager** | [pnpm 11](https://pnpm.io/)                                                       | Fast, disk-efficient installs          |
 
 ---
 
@@ -95,6 +94,7 @@ GitHub Webhook ──────────────► /api/webhooks/githu
 ```
 
 The core review pipeline:
+
 1. GitHub sends a `pull_request` webhook event to `/api/webhooks/github`
 2. The webhook signature is verified using `GITHUB_WEBHOOK_SECRET`
 3. The PR diff is extracted via the GitHub API
@@ -122,6 +122,7 @@ The core review pipeline:
 ### Required GitHub Scopes (OAuth App)
 
 If using GitHub OAuth for user sign-in (separate from the GitHub App):
+
 - `read:user` â€” Read user profile
 - `user:email` â€” Read user email address
 - `repo` â€” Required to list and access private repositories
@@ -189,19 +190,19 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 Create a `.env` file in the project root. Reference `.env.example` for a template with all variables documented.
 
-| Variable | Required | Description |
-|---|---|---|
-| `DATABASE_URL` | âœ… | PostgreSQL connection string |
-| `BETTER_AUTH_SECRET` | âœ… | Secret key for session signing. Generate with `openssl rand -base64 32` |
-| `BETTER_AUTH_URL` | âœ… | Your app's base URL (e.g., `http://localhost:3000` in development) |
-| `GITHUB_CLIENT_ID` | âœ… | GitHub OAuth App client ID (for user sign-in) |
-| `GITHUB_CLIENT_SECRET` | âœ… | GitHub OAuth App client secret |
-| `GITHUB_APP_ID` | âœ… | GitHub App ID (for PR review posting) |
-| `GITHUB_APP_PRIVATE_KEY` | âœ… | GitHub App private key (PEM format, base64-encoded) |
-| `GITHUB_WEBHOOK_SECRET` | âœ… | Secret for verifying GitHub webhook payloads |
-| `OPENAI_API_KEY` | âš ï¸ | OpenAI API key (required if using OpenAI as the AI provider) |
-| `GOOGLE_AI_API_KEY` | âš ï¸ | Google Gemini API key (required if using Gemini as the AI provider) |
-| `NEXT_PUBLIC_APP_URL` | âœ… | Public base URL of the app (used for OG images, emails, canonical URLs) |
+| Variable                 | Required | Description                                                             |
+| ------------------------ | -------- | ----------------------------------------------------------------------- |
+| `DATABASE_URL`           | âœ…      | PostgreSQL connection string                                            |
+| `BETTER_AUTH_SECRET`     | âœ…      | Secret key for session signing. Generate with `openssl rand -base64 32` |
+| `BETTER_AUTH_URL`        | âœ…      | Your app's base URL (e.g., `http://localhost:3000` in development)      |
+| `GITHUB_CLIENT_ID`       | âœ…      | GitHub OAuth App client ID (for user sign-in)                           |
+| `GITHUB_CLIENT_SECRET`   | âœ…      | GitHub OAuth App client secret                                          |
+| `GITHUB_APP_ID`          | âœ…      | GitHub App ID (for PR review posting)                                   |
+| `GITHUB_APP_PRIVATE_KEY` | âœ…      | GitHub App private key (PEM format, base64-encoded)                     |
+| `GITHUB_WEBHOOK_SECRET`  | âœ…      | Secret for verifying GitHub webhook payloads                            |
+| `OPENAI_API_KEY`         | âš ï¸    | OpenAI API key (required if using OpenAI as the AI provider)            |
+| `GOOGLE_AI_API_KEY`      | âš ï¸    | Google Gemini API key (required if using Gemini as the AI provider)     |
+| `NEXT_PUBLIC_APP_URL`    | âœ…      | Public base URL of the app (used for OG images, emails, canonical URLs) |
 
 ---
 
@@ -297,15 +298,15 @@ pr-inspector/
 
 ## Scripts
 
-| Command | Description |
-|---|---|
-| `pnpm dev` | Start the development server |
-| `pnpm build` | Build the production bundle |
-| `pnpm start` | Start the production server |
-| `pnpm lint` | Run ESLint |
-| `pnpm prisma studio` | Open Prisma Studio (visual DB browser) |
-| `pnpm prisma migrate dev` | Run pending migrations in development |
-| `pnpm prisma generate` | Regenerate the Prisma client |
+| Command                   | Description                            |
+| ------------------------- | -------------------------------------- |
+| `pnpm dev`                | Start the development server           |
+| `pnpm build`              | Build the production bundle            |
+| `pnpm start`              | Start the production server            |
+| `pnpm lint`               | Run ESLint                             |
+| `pnpm prisma studio`      | Open Prisma Studio (visual DB browser) |
+| `pnpm prisma migrate dev` | Run pending migrations in development  |
+| `pnpm prisma generate`    | Regenerate the Prisma client           |
 
 ---
 
@@ -314,6 +315,7 @@ pr-inspector/
 Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) before opening a PR.
 
 Quick guide:
+
 1. Fork the repository
 2. Create a feature branch: `git checkout -b feat/your-feature-name`
 3. Make your changes
@@ -342,5 +344,5 @@ Quick guide:
 ---
 
 <div align="center">
-  <i>Built with â¤ï¸ and mild sarcasm by the pr Inspector team.</i>
+  <i>Built with â¤ï¸ and mild sarcasm by the PR  Inspector team.</i>
 </div>

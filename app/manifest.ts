@@ -2,8 +2,8 @@ import type { MetadataRoute } from "next";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "pr Inspector",
-    short_name: "pr Inspector",
+    name: "PR  Inspector",
+    short_name: "PR  Inspector",
     description:
       "AI-powered code review for GitHub pull requests. Bugs caught. Security flagged. Your team ships faster.",
     start_url: "/",
@@ -36,7 +36,7 @@ export default function manifest(): MetadataRoute.Manifest {
         src: "/og-image.png",
         sizes: "1200x630",
         type: "image/png",
-       
+
         form_factor: "wide",
       },
     ],
