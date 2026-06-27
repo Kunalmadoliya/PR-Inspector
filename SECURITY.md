@@ -15,11 +15,11 @@ We only provide security fixes for the latest version. Keep your deployment up t
 
 **Please do not report security vulnerabilities via public GitHub Issues.**
 
-If you discover a security vulnerability in Code Chowkidar, please report it responsibly:
+If you discover a security vulnerability in pr Inspector, please report it responsibly:
 
 ### Option 1: GitHub Private Vulnerability Reporting (preferred)
 
-Use the [Report a vulnerability](https://github.com/Kunalmadoliya/Code-Chowkidar/security/advisories/new) button on the Security tab of this repository.
+Use the [Report a vulnerability](https://github.com/Kunalmadoliya/pr-inspector/security/advisories/new) button on the Security tab of this repository.
 
 ### Option 2: Email
 
@@ -72,4 +72,4 @@ We follow [responsible disclosure](https://en.wikipedia.org/wiki/Coordinated_vul
 
 ---
 
-*Code Chowkidar patrols every commit. We take security seriously.*
+*pr Inspector reviews every commit. We take security seriously. We take security seriously.*

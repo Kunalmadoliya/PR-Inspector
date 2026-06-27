@@ -1,6 +1,6 @@
 # Changelog
 
-All notable changes to Code Chowkidar are documented here.
+All notable changes to pr Inspector are documented here.
 
 Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 Versioning follows [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
@@ -10,7 +10,7 @@ Versioning follows [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 ## [Unreleased]
 
 ### Added
-- Full Code Chowkidar landing page with Hero, Features, How It Works, Benefits, Pricing, FAQ, and Footer sections
+- Full pr Inspector landing page with Hero, Features, How It Works, Benefits, Pricing, FAQ, and Footer sections
 - Sign-in page with GitHub OAuth and email/password form
 - Sign-up page with GitHub OAuth and email/password form
 - Root layout with complete SEO metadata (Open Graph, Twitter Card, keywords, robots)
@@ -22,15 +22,15 @@ Versioning follows [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - `LICENSE` — MIT license
 - `SECURITY.md` — vulnerability disclosure policy
 - `CHANGELOG.md` — this file
-- Auth layout with Code Chowkidar brand identity and on-brand hero copy
+- Auth layout with pr Inspector brand identity and on-brand hero copy
 - Accessibility improvements: skip-to-content link, `aria-label` on logo SVG, `<title>` in SVG, semantic heading hierarchy
 - SoftwareApplication and Organization Schema.org structured data on homepage
 - FAQPage Schema.org structured data on FAQ section
 
 ### Changed
-- Renamed `package.json` name from `coderabbit` to `code-chowkidar`
-- Updated root layout metadata: replaced Next.js boilerplate with Code Chowkidar branding
-- Updated auth layout: replaced `YOUR_APP` and generic copy with Code Chowkidar brand copy
+- Renamed `package.json` name from `coderabbit` to `code-chowkidar` (and later to `pr-inspector`)
+- Updated root layout metadata: replaced Next.js boilerplate with pr Inspector branding
+- Updated auth layout: replaced `YOUR_APP` and generic copy with pr Inspector brand copy
 - Rewrote README: correct brand, architecture diagram, GitHub App guide, full environment variables table, contributing guide, roadmap
 
 ### Removed

@@ -2,9 +2,9 @@
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Code Chowkidar â€” AI Code Review for GitHub Pull Requests",
+  title: "pr Inspector â€” AI Code Review for GitHub Pull Requests",
   description:
-    "Code Chowkidar reviews every GitHub pull request the moment it's opened. Bugs caught. Security risks flagged. Suggestions posted inline. Before your teammates even look.",
+    "pr Inspector reviews every GitHub pull request the moment it's opened. Bugs caught. Security risks flagged. Suggestions posted inline. Before your teammates even look.",
   alternates: {
     canonical: "/",
   },
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   },
 };
 
-/* â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+/* ────────────────────────────────────────────────────────────────────────
    STRUCTURED DATA â€” SoftwareApplication + Organization schema
    â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 const structuredData = {
@@ -22,12 +22,12 @@ const structuredData = {
   "@graph": [
     {
       "@type": "SoftwareApplication",
-      name: "Code Chowkidar",
+      name: "pr Inspector",
       applicationCategory: "DeveloperApplication",
       operatingSystem: "Web",
       description:
         "AI-powered code review platform that reviews GitHub pull requests, detects bugs, identifies security risks, and helps developers ship production-ready code faster.",
-      url: "https://codechowkidar.com",
+      url: "https://prinspector.com",
       offers: {
         "@type": "Offer",
         price: "0",
@@ -44,15 +44,15 @@ const structuredData = {
     },
     {
       "@type": "Organization",
-      name: "Code Chowkidar",
-      url: "https://codechowkidar.com",
-      logo: "https://codechowkidar.com/og-image.png",
-      sameAs: ["https://github.com/Kunalmadoliya/Code-Chowkidar"],
+      name: "pr Inspector",
+      url: "https://prinspector.com",
+      logo: "https://prinspector.com/og-image.png",
+      sameAs: ["https://github.com/Kunalmadoliya/pr-inspector"],
     },
   ],
 };
 
-/* â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+/* ────────────────────────────────────────────────────────────────────────
    STATIC DATA
    â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 const features = [
@@ -69,13 +69,13 @@ const features = [
       "Hardcoded secrets, injection risks, and vulnerable dependencies flagged automatically. Every PR, every time.",
   },
   {
-    icon: "ðŸ’¬",
+    icon: "💬",
     title: "Actionable, Inline Feedback",
     description:
       "No vague comments. Every suggestion is precise, contextual, and posted directly on the relevant line.",
   },
   {
-    icon: "âš¡",
+    icon: "⚡",
     title: "Instant. No Waiting.",
     description:
       "Review starts the moment a PR is opened. No queue. No delay. Results within 30 seconds.",
@@ -84,10 +84,10 @@ const features = [
     icon: "ðŸ”",
     title: "Works With Your Existing Workflow",
     description:
-      "No new tools to learn. Code Chowkidar posts its findings as GitHub PR comments â€” right where your team already works.",
+      "No new tools to learn. pr Inspector posts its findings as GitHub PR comments â€” right where your team already works.",
   },
   {
-    icon: "ðŸ“Š",
+    icon: "📊",
     title: "Track Code Quality Over Time",
     description:
       "See trends across your repositories. Identify recurring issues. Watch code quality improve sprint over sprint.",
@@ -99,19 +99,19 @@ const steps = [
     number: "01",
     title: "Connect GitHub",
     description:
-      "Install the Code Chowkidar GitHub App on your repositories. Takes 60 seconds. No code changes required.",
+      "Install the pr Inspector GitHub App on your repositories. Takes 60 seconds. No code changes required.",
   },
   {
     number: "02",
     title: "Open a Pull Request",
     description:
-      "Work exactly the way you already do. Open a PR as usual. Code Chowkidar is watching.",
+      "Work exactly the way you already do. Open a PR as usual. pr Inspector is watching.",
   },
   {
     number: "03",
     title: "Review Starts Instantly",
     description:
-      "Code Chowkidar analyzes the diff and posts its findings as PR comments within 30 seconds. Bugs, security issues, and improvements â€” all inline.",
+      "pr Inspector analyzes the diff and posts its findings as PR comments within 30 seconds. Bugs, security issues, and improvements â€” all inline.",
   },
 ];
 
@@ -119,7 +119,7 @@ const benefits = [
   {
     title: "Save Engineering Hours",
     description:
-      "Stop spending senior engineer time on boilerplate review comments. Let Code Chowkidar handle the mechanical checks.",
+      "Stop spending senior engineer time on boilerplate review comments. Let pr Inspector handle the mechanical checks.",
     stat: "~3hrs",
     statLabel: "saved per engineer per week",
   },
@@ -179,24 +179,24 @@ const plans = [
 
 const faqs = [
   {
-    question: "How does Code Chowkidar access my code?",
+    question: "How does pr Inspector access my code?",
     answer:
-      "Code Chowkidar uses a GitHub App with read-only access to your repository's pull request diffs. It never clones your repository or stores your source code. Only the changed lines in a PR are sent for analysis.",
+      "pr Inspector uses a GitHub App with read-only access to your repository's pull request diffs. It never clones your repository or stores your source code. Only the changed lines in a PR are sent for analysis.",
   },
   {
     question: "Which AI model powers the reviews?",
     answer:
-      "Code Chowkidar uses a combination of static analysis and large language model inference to review code. The specific model is updated periodically as better options become available.",
+      "pr Inspector uses a combination of static analysis and large language model inference to review code. The specific model is updated periodically as better options become available.",
   },
   {
     question: "Does it work with all programming languages?",
     answer:
-      "Code Chowkidar works with all languages GitHub supports. It has enhanced understanding of TypeScript, JavaScript, Python, Go, Rust, Java, and Ruby, but can review any language.",
+      "pr Inspector works with all languages GitHub supports. It has enhanced understanding of TypeScript, JavaScript, Python, Go, Rust, Java, and Ruby, but can review any language.",
   },
   {
     question: "What if I disagree with a suggestion?",
     answer:
-      "Every suggestion is optional. You can dismiss, resolve, or ignore any comment â€” just like you would with a human reviewer. Code Chowkidar does not block merges.",
+      "Every suggestion is optional. You can dismiss, resolve, or ignore any comment â€” just like you would with a human reviewer. pr Inspector does not block merges.",
   },
   {
     question: "Is it free for open-source projects?",
@@ -205,7 +205,7 @@ const faqs = [
   },
 ];
 
-/* â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+/* ────────────────────────────────────────────────────────────────────────
    PAGE COMPONENT
    â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 export default function HomePage() {
@@ -219,7 +219,7 @@ export default function HomePage() {
 
       <a
         href="#main-content"
-        className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-md focus:bg-orange-600 focus:px-4 focus:py-2 focus:text-white focus:text-sm focus:font-semibold"
+        className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-md focus:bg-[#1e3a5f] focus:px-4 focus:py-2 focus:text-white focus:text-sm focus:font-semibold"
       >
         Skip to main content
       </a>
@@ -236,36 +236,19 @@ export default function HomePage() {
             <Link
               href="/"
               id="nav-logo"
-              aria-label="Code Chowkidar â€” home"
+              aria-label="pr Inspector â€” home"
               className="flex items-center gap-2.5"
             >
-              <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-orange-500 to-red-600 shadow-sm">
-                <svg
-                  aria-hidden="true"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                >
-                  <path
-                    d="M12 2L3 7v5c0 5.25 3.75 10.15 9 11.35C17.25 22.15 21 17.25 21 12V7L12 2z"
-                    fill="white"
-                    fillOpacity="0.3"
-                    stroke="white"
-                    strokeWidth="1.5"
-                    strokeLinejoin="round"
-                  />
-                  <path
-                    d="M9 12l2 2 4-4"
-                    stroke="white"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
+              <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-[#2a4f7a] to-red-600 shadow-sm">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#c5a44e" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M2 15C2 17 5 19 12 19C19 19 22 17 22 15" stroke="#c5a44e" fill="#1e3a5f" />
+                  <path d="M4 14V11C4 7 7 5 12 5C17 5 20 7 20 11V14" fill="#1e3a5f" stroke="#1e3a5f" />
+                  <circle cx="12" cy="10" r="2" fill="#c5a44e" stroke="#c5a44e" />
+                  <path d="M10 14h4" stroke="#c5a44e" strokeWidth="2" />
                 </svg>
               </div>
               <span className="text-base font-bold text-zinc-900 dark:text-white">
-                Code Chowkidar
+                pr Inspector
               </span>
             </Link>
 
@@ -300,7 +283,7 @@ export default function HomePage() {
               <Link
                 href="/signup"
                 id="nav-signup-btn"
-                className="rounded-lg bg-orange-600 px-4 py-2 text-sm font-semibold text-white shadow-sm transition-all hover:bg-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2"
+                className="rounded-lg bg-[#1e3a5f] px-4 py-2 text-sm font-semibold text-white shadow-sm transition-all hover:bg-[#2a4f7a] focus:outline-none focus:ring-2 focus:ring-[#2a4f7a] focus:ring-offset-2"
               >
                 Get started free
               </Link>
@@ -318,23 +301,23 @@ export default function HomePage() {
             {/* Background gradient */}
             <div
               aria-hidden="true"
-              className="absolute inset-0 bg-gradient-to-br from-orange-50 via-white to-amber-50 dark:from-zinc-900 dark:via-zinc-950 dark:to-zinc-900"
+              className="absolute inset-0 bg-gradient-to-br from-slate-50 via-white to-blue-50 dark:from-zinc-900 dark:via-zinc-950 dark:to-zinc-900"
             />
             {/* Decorative blobs */}
             <div
               aria-hidden="true"
-              className="absolute -top-40 -right-40 h-96 w-96 rounded-full bg-orange-200 opacity-20 blur-3xl dark:bg-orange-900"
+              className="absolute -top-40 -right-40 h-96 w-96 rounded-full bg-slate-200 opacity-20 blur-3xl dark:bg-slate-800"
             />
             <div
               aria-hidden="true"
-              className="absolute -bottom-40 -left-20 h-80 w-80 rounded-full bg-amber-200 opacity-20 blur-3xl dark:bg-amber-900"
+              className="absolute -bottom-40 -left-20 h-80 w-80 rounded-full bg-blue-200 opacity-20 blur-3xl dark:bg-blue-800"
             />
 
             <div className="relative mx-auto max-w-7xl px-4 py-24 sm:px-6 sm:py-32 lg:px-8 lg:py-40">
               <div className="mx-auto max-w-3xl text-center">
                 {/* Badge */}
-                <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-orange-200 bg-orange-50 px-3 py-1 text-xs font-semibold text-orange-700 dark:border-orange-800 dark:bg-orange-950 dark:text-orange-300">
-                  <span className="h-1.5 w-1.5 rounded-full bg-orange-500" aria-hidden="true" />
+                <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-semibold text-[#152842] dark:border-slate-700 dark:bg-slate-900 dark:text-slate-300">
+                  <span className="h-1.5 w-1.5 rounded-full bg-[#2a4f7a]" aria-hidden="true" />
                   AI-Powered Code Review
                 </div>
 
@@ -344,8 +327,8 @@ export default function HomePage() {
                   className="text-5xl font-extrabold tracking-tight text-zinc-900 dark:text-white sm:text-6xl lg:text-7xl"
                 >
                   Your PR&apos;s Personal{" "}
-                  <span className="bg-gradient-to-r from-orange-500 to-red-600 bg-clip-text text-transparent">
-                    Chowkidar.
+                  <span className="bg-gradient-to-r from-[#2a4f7a] to-red-600 bg-clip-text text-transparent">
+                    Inspector.
                   </span>
                 </h1>
 
@@ -361,10 +344,10 @@ export default function HomePage() {
                   <Link
                     href="/signup"
                     id="hero-primary-cta"
-                    className="flex items-center gap-2 rounded-xl bg-orange-600 px-8 py-4 text-base font-bold text-white shadow-lg shadow-orange-500/25 transition-all hover:bg-orange-500 hover:shadow-orange-500/40 hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 active:translate-y-0"
-                    aria-label="Hire your Chowkidar â€” get started free"
+                    className="flex items-center gap-2 rounded-xl bg-[#1e3a5f] px-8 py-4 text-base font-bold text-white shadow-lg shadow-[#2a4f7a]/25 transition-all hover:bg-[#2a4f7a] hover:shadow-[#2a4f7a]/40 hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-[#2a4f7a] focus:ring-offset-2 active:translate-y-0"
+                    aria-label="Hire your Inspector â€” get started free"
                   >
-                    Hire Your Chowkidar
+                    Hire Your Inspector
                     <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                       <path d="M5 12h14M12 5l7 7-7 7" />
                     </svg>
@@ -389,8 +372,8 @@ export default function HomePage() {
                 <div className="overflow-hidden rounded-2xl border border-zinc-200 shadow-2xl shadow-zinc-900/10 dark:border-zinc-700 dark:shadow-black/30">
                   {/* Mock browser chrome */}
                   <div className="flex items-center gap-2 border-b border-zinc-200 bg-zinc-50 px-4 py-3 dark:border-zinc-700 dark:bg-zinc-900">
-                    <div className="h-3 w-3 rounded-full bg-red-400" aria-hidden="true" />
-                    <div className="h-3 w-3 rounded-full bg-amber-400" aria-hidden="true" />
+                    <div className="h-3 w-3 rounded-full bg-rose-400" aria-hidden="true" />
+                    <div className="h-3 w-3 rounded-full bg-blue-400" aria-hidden="true" />
                     <div className="h-3 w-3 rounded-full bg-green-400" aria-hidden="true" />
                     <div className="ml-4 flex-1 rounded-md bg-zinc-200 px-3 py-1 text-xs text-zinc-500 dark:bg-zinc-700 dark:text-zinc-400">
                       github.com/yourorg/yourrepo/pull/142
@@ -400,13 +383,11 @@ export default function HomePage() {
                   <div className="bg-white p-6 dark:bg-zinc-950">
                     <div className="space-y-3">
                       <div className="flex items-start gap-3">
-                        <div className="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-orange-500 to-red-600 text-xs font-bold text-white" aria-hidden="true">
-                          CC
-                        </div>
-                        <div className="flex-1 rounded-lg border border-orange-200 bg-orange-50 p-4 dark:border-orange-900 dark:bg-orange-950/30">
+                        <div className="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-[#2a4f7a] to-red-600 text-xs font-bold text-white" aria-hidden="true">PI</div>
+                        <div className="flex-1 rounded-lg border border-slate-200 bg-slate-50 p-4 dark:border-slate-800 dark:bg-slate-900/30">
                           <div className="mb-2 flex items-center gap-2">
-                            <span className="text-sm font-semibold text-zinc-900 dark:text-white">Code Chowkidar</span>
-                            <span className="rounded-full bg-orange-100 px-2 py-0.5 text-xs font-medium text-orange-700 dark:bg-orange-900 dark:text-orange-300">
+                            <span className="text-sm font-semibold text-zinc-900 dark:text-white">pr Inspector</span>
+                            <span className="rounded-full bg-slate-100 px-2 py-0.5 text-xs font-medium text-[#152842] dark:bg-slate-800 dark:text-slate-300">
                               bot
                             </span>
                             <span className="text-xs text-zinc-400">just now</span>
@@ -415,20 +396,18 @@ export default function HomePage() {
                             ðŸ” <strong>Security:</strong> Potential SQL injection risk on line 47. User input is being concatenated directly into the query string. Use parameterized queries instead.
                           </p>
                           <div className="mt-3 rounded-md bg-zinc-900 p-3 font-mono text-xs dark:bg-zinc-800">
-                            <span className="text-red-400">- const query = `SELECT * FROM users WHERE id = ${"{"}userId{"}"}`;</span>
+                            <span className="text-rose-400">- const query = `SELECT * FROM users WHERE id = ${"{"}userId{"}"}`;</span>
                             <br />
                             <span className="text-green-400">+ const query = db.prepare(&apos;SELECT * FROM users WHERE id = ?&apos;).get(userId);</span>
                           </div>
                         </div>
                       </div>
                       <div className="flex items-start gap-3">
-                        <div className="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-orange-500 to-red-600 text-xs font-bold text-white" aria-hidden="true">
-                          CC
-                        </div>
-                        <div className="flex-1 rounded-lg border border-amber-200 bg-amber-50 p-4 dark:border-amber-900 dark:bg-amber-950/30">
+                        <div className="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-[#2a4f7a] to-red-600 text-xs font-bold text-white" aria-hidden="true">PI</div>
+                        <div className="flex-1 rounded-lg border border-blue-200 bg-blue-50 p-4 dark:border-blue-800 dark:bg-blue-900/30">
                           <div className="mb-2 flex items-center gap-2">
-                            <span className="text-sm font-semibold text-zinc-900 dark:text-white">Code Chowkidar</span>
-                            <span className="rounded-full bg-orange-100 px-2 py-0.5 text-xs font-medium text-orange-700 dark:bg-orange-900 dark:text-orange-300">
+                            <span className="text-sm font-semibold text-zinc-900 dark:text-white">pr Inspector</span>
+                            <span className="rounded-full bg-slate-100 px-2 py-0.5 text-xs font-medium text-[#152842] dark:bg-slate-800 dark:text-slate-300">
                               bot
                             </span>
                             <span className="text-xs text-zinc-400">just now</span>
@@ -459,10 +438,10 @@ export default function HomePage() {
                 >
                   Everything a senior reviewer catches.
                   <br />
-                  <span className="text-orange-600">In 30 seconds.</span>
+                  <span className="text-[#1e3a5f]">In 30 seconds.</span>
                 </h2>
                 <p className="mt-4 text-lg text-zinc-600 dark:text-zinc-400">
-                  Code Chowkidar doesn&apos;t get tired, doesn&apos;t miss
+                  pr Inspector doesn&apos;t get tired, doesn&apos;t miss
                   things, and doesn&apos;t have off days.
                 </p>
               </div>
@@ -476,7 +455,7 @@ export default function HomePage() {
                     key={feature.title}
                     className="group flex flex-col gap-4 rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm transition-all hover:shadow-md hover:-translate-y-1 dark:border-zinc-700 dark:bg-zinc-800"
                   >
-                    <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-orange-50 text-2xl dark:bg-orange-950" aria-hidden="true">
+                    <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-slate-50 text-2xl dark:bg-slate-900" aria-hidden="true">
                       {feature.icon}
                     </div>
                     <div>
@@ -522,10 +501,10 @@ export default function HomePage() {
                     {index < steps.length - 1 && (
                       <div
                         aria-hidden="true"
-                        className="absolute left-10 top-5 hidden h-0.5 w-full bg-gradient-to-r from-orange-200 to-transparent sm:block dark:from-orange-900"
+                        className="absolute left-10 top-5 hidden h-0.5 w-full bg-gradient-to-r from-slate-200 to-transparent sm:block dark:from-slate-800"
                       />
                     )}
-                    <div className="flex h-10 w-10 items-center justify-center rounded-full bg-orange-600 text-sm font-bold text-white shadow-lg shadow-orange-500/30 z-10">
+                    <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#1e3a5f] text-sm font-bold text-white shadow-lg shadow-[#2a4f7a]/30 z-10">
                       {step.number}
                     </div>
                     <div>
@@ -544,7 +523,7 @@ export default function HomePage() {
                 <Link
                   href="/signup"
                   id="how-it-works-cta"
-                  className="inline-flex items-center gap-2 rounded-xl bg-orange-600 px-8 py-4 text-base font-bold text-white shadow-lg shadow-orange-500/25 transition-all hover:bg-orange-500 hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2"
+                  className="inline-flex items-center gap-2 rounded-xl bg-[#1e3a5f] px-8 py-4 text-base font-bold text-white shadow-lg shadow-[#2a4f7a]/25 transition-all hover:bg-[#2a4f7a] hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-[#2a4f7a] focus:ring-offset-2"
                 >
                   Connect GitHub Now
                 </Link>
@@ -578,7 +557,7 @@ export default function HomePage() {
                     className="flex flex-col gap-4 rounded-2xl border border-zinc-200 bg-white p-8 shadow-sm dark:border-zinc-700 dark:bg-zinc-800"
                   >
                     <div>
-                      <p className="text-4xl font-black text-orange-600">
+                      <p className="text-4xl font-black text-[#1e3a5f]">
                         {benefit.stat}
                       </p>
                       <p className="text-xs font-medium text-zinc-500 dark:text-zinc-400 mt-1 uppercase tracking-wide">
@@ -629,12 +608,12 @@ export default function HomePage() {
                     key={plan.name}
                     className={`flex flex-col rounded-2xl border p-8 shadow-sm ${
                       plan.highlighted
-                        ? "border-orange-500 bg-gradient-to-br from-orange-50 to-amber-50 shadow-orange-500/10 dark:from-orange-950/30 dark:to-amber-950/30 dark:border-orange-700"
+                        ? "border-[#2a4f7a] bg-gradient-to-br from-slate-50 to-blue-50 shadow-[#2a4f7a]/10 dark:from-slate-900/30 dark:to-blue-900/30 dark:border-[#152842]"
                         : "border-zinc-200 bg-white dark:border-zinc-700 dark:bg-zinc-800"
                     }`}
                   >
                     {plan.highlighted && (
-                      <div className="mb-4 inline-flex w-fit items-center gap-1 rounded-full bg-orange-600 px-3 py-1 text-xs font-bold text-white">
+                      <div className="mb-4 inline-flex w-fit items-center gap-1 rounded-full bg-[#1e3a5f] px-3 py-1 text-xs font-bold text-white">
                         Most Popular
                       </div>
                     )}
@@ -660,7 +639,7 @@ export default function HomePage() {
                         >
                           <svg
                             aria-hidden="true"
-                            className="h-4 w-4 flex-shrink-0 text-orange-500"
+                            className="h-4 w-4 flex-shrink-0 text-[#2a4f7a]"
                             viewBox="0 0 24 24"
                             fill="none"
                             stroke="currentColor"
@@ -679,7 +658,7 @@ export default function HomePage() {
                       id={`pricing-${plan.name.toLowerCase().replace(" ", "-")}-cta`}
                       className={`mt-8 flex items-center justify-center rounded-lg px-6 py-3 text-sm font-semibold transition-all focus:outline-none focus:ring-2 focus:ring-offset-2 ${
                         plan.highlighted
-                          ? "bg-orange-600 text-white shadow-lg shadow-orange-500/25 hover:bg-orange-500 focus:ring-orange-500"
+                          ? "bg-[#1e3a5f] text-white shadow-lg shadow-[#2a4f7a]/25 hover:bg-[#2a4f7a] focus:ring-[#2a4f7a]"
                           : "border border-zinc-200 text-zinc-700 hover:bg-zinc-50 focus:ring-zinc-400 dark:border-zinc-600 dark:text-zinc-200 dark:hover:bg-zinc-700"
                       }`}
                     >
@@ -744,16 +723,16 @@ export default function HomePage() {
           {/* â”€â”€ FINAL CTA â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
           <section
             aria-labelledby="final-cta-heading"
-            className="bg-gradient-to-br from-orange-500 to-red-700 py-24 sm:py-32"
+            className="bg-gradient-to-br from-[#2a4f7a] to-red-700 py-24 sm:py-32"
           >
             <div className="mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
               <h2
                 id="final-cta-heading"
                 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl"
               >
-                Your codebase deserves a chowkidar.
+                Your codebase deserves a inspector.
               </h2>
-              <p className="mx-auto mt-6 max-w-xl text-xl text-orange-100">
+              <p className="mx-auto mt-6 max-w-xl text-xl text-slate-100">
                 Start reviewing pull requests automatically. Free for
                 open-source. No credit card. Up in 60 seconds.
               </p>
@@ -761,14 +740,14 @@ export default function HomePage() {
                 <Link
                   href="/signup"
                   id="final-cta-primary-btn"
-                  className="flex items-center gap-2 rounded-xl bg-white px-8 py-4 text-base font-bold text-orange-600 shadow-lg transition-all hover:bg-orange-50 hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-orange-600"
+                  className="flex items-center gap-2 rounded-xl bg-white px-8 py-4 text-base font-bold text-[#1e3a5f] shadow-lg transition-all hover:bg-slate-50 hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[#1e3a5f]"
                 >
-                  Hire Your Chowkidar Free
+                  Hire Your Inspector Free
                 </Link>
                 <Link
                   href="/docs"
                   id="final-cta-secondary-btn"
-                  className="flex items-center gap-2 rounded-xl border border-orange-300 px-8 py-4 text-base font-semibold text-white transition-all hover:bg-orange-600 hover:border-orange-400 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-orange-600"
+                  className="flex items-center gap-2 rounded-xl border border-slate-300 px-8 py-4 text-base font-semibold text-white transition-all hover:bg-[#1e3a5f] hover:border-slate-400 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[#1e3a5f]"
                 >
                   Read the Docs
                 </Link>
@@ -785,21 +764,23 @@ export default function HomePage() {
               <div className="col-span-2 lg:col-span-2">
                 <Link
                   href="/"
-                  aria-label="Code Chowkidar â€” home"
+                  aria-label="pr Inspector â€” home"
                   className="flex items-center gap-2"
                 >
-                  <div className="flex h-7 w-7 items-center justify-center rounded-md bg-gradient-to-br from-orange-500 to-red-600">
-                    <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none">
-                      <path d="M12 2L3 7v5c0 5.25 3.75 10.15 9 11.35C17.25 22.15 21 17.25 21 12V7L12 2z" fill="white" fillOpacity="0.3" stroke="white" strokeWidth="1.5" strokeLinejoin="round" />
-                      <path d="M9 12l2 2 4-4" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                    </svg>
+                  <div className="flex h-7 w-7 items-center justify-center rounded-md bg-gradient-to-br from-[#2a4f7a] to-red-600">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#c5a44e" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M2 15C2 17 5 19 12 19C19 19 22 17 22 15" stroke="#c5a44e" fill="#1e3a5f" />
+                  <path d="M4 14V11C4 7 7 5 12 5C17 5 20 7 20 11V14" fill="#1e3a5f" stroke="#1e3a5f" />
+                  <circle cx="12" cy="10" r="2" fill="#c5a44e" stroke="#c5a44e" />
+                  <path d="M10 14h4" stroke="#c5a44e" strokeWidth="2" />
+                </svg>
                   </div>
                   <span className="text-sm font-bold text-zinc-900 dark:text-white">
-                    Code Chowkidar
+                    pr Inspector
                   </span>
                 </Link>
                 <p className="mt-3 text-sm text-zinc-500 dark:text-zinc-400 max-w-xs">
-                  Your PR&apos;s personal chowkidar. Patrolling every commit,
+                  Your PR&apos;s personal inspector. Patrolling every commit,
                   before your teammates do.
                 </p>
               </div>
@@ -880,14 +861,14 @@ export default function HomePage() {
             {/* Bottom bar */}
             <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-zinc-200 pt-8 sm:flex-row dark:border-zinc-800">
               <p className="text-xs text-zinc-400 dark:text-zinc-500">
-                &copy; {new Date().getFullYear()} Code Chowkidar. Built with â¤ï¸ and mild sarcasm.
+                &copy; {new Date().getFullYear()} pr Inspector. Built with â¤ï¸ and mild sarcasm.
               </p>
               <div className="flex items-center gap-4">
                 <a
-                  href="https://github.com/Kunalmadoliya/Code-Chowkidar"
+                  href="https://github.com/Kunalmadoliya/pr-inspector"
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label="Code Chowkidar on GitHub"
+                  aria-label="pr Inspector on GitHub"
                   className="text-zinc-400 transition-colors hover:text-zinc-700 dark:hover:text-zinc-300"
                 >
                   <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">

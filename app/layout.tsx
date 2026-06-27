@@ -16,17 +16,15 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
-
-const APP_URL = process.env.NEXT_PUBLIC_APP_URL ?? "https://codechowkidar.com";
-
+const APP_URL = process.env.NEXT_PUBLIC_APP_URL ?? "https://prinspector.com";
 export const metadata: Metadata = {
   metadataBase: new URL(APP_URL),
   title: {
-    template: "%s | Code Chowkidar",
-    default: "Code Chowkidar — AI Code Review for GitHub Pull Requests",
+    template: "%s | pr Inspector",
+    default: "pr Inspector — AI Code Review for GitHub Pull Requests",
   },
   description:
-    "Code Chowkidar automatically reviews your GitHub pull requests, detects bugs, flags security vulnerabilities, and helps your team ship cleaner, safer code. Instant. Automated. Opinionated.",
+    "pr Inspector automatically reviews your GitHub pull requests, detects bugs, flags security vulnerabilities, and helps your team ship cleaner, safer code. Instant. Automated. Opinionated.",
   keywords: [
     "AI code review",
     "GitHub pull request review",
@@ -39,9 +37,9 @@ export const metadata: Metadata = {
     "PR review bot",
     "code security",
   ],
-  authors: [{ name: "Code Chowkidar" }],
-  creator: "Code Chowkidar",
-  publisher: "Code Chowkidar",
+  authors: [{ name: "pr Inspector" }],
+  creator: "pr Inspector",
+  publisher: "pr Inspector",
   robots: {
     index: true,
     follow: true,
@@ -57,27 +55,27 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: APP_URL,
-    siteName: "Code Chowkidar",
-    title: "Code Chowkidar — AI Code Review for GitHub Pull Requests",
+    siteName: "pr Inspector",
+    title: "pr Inspector — AI Code Review for GitHub Pull Requests",
     description:
-      "Your PR's personal chowkidar. We review every pull request before it reaches production. Bugs, security risks, and code smells — caught automatically.",
+      "Your PR's personal inspector. We review every pull request before it reaches production. Bugs, security risks, and code smells — caught automatically.",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Code Chowkidar — AI Code Review for GitHub Pull Requests",
+        alt: "pr Inspector — AI Code Review for GitHub Pull Requests",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Code Chowkidar — AI Code Review for GitHub Pull Requests",
+    title: "pr Inspector — AI Code Review for GitHub Pull Requests",
     description:
-      "Your PR's personal chowkidar. Automated code review that catches bugs, flags security issues, and posts inline suggestions — before your teammates do.",
+      "Your PR's personal inspector. Automated code review that catches bugs, flags security issues, and posts inline suggestions — before your teammates do.",
     images: ["/og-image.png"],
-    creator: "@CodeChowkidar",
-    site: "@CodeChowkidar",
+    creator: "@prInspector",
+    site: "@prInspector",
   },
   icons: {
     icon: "/favicon.ico",

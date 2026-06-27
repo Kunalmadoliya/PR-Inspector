@@ -2,14 +2,14 @@ import type { MetadataRoute } from "next";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "Code Chowkidar",
-    short_name: "Chowkidar",
+    name: "pr Inspector",
+    short_name: "pr Inspector",
     description:
       "AI-powered code review for GitHub pull requests. Bugs caught. Security flagged. Your team ships faster.",
     start_url: "/",
     display: "standalone",
     background_color: "#ffffff",
-    theme_color: "#ea580c",
+    theme_color: "#1e3a5f",
     orientation: "portrait-primary",
     categories: ["productivity", "developer tools", "utilities"],
     icons: [

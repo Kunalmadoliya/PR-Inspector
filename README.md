@@ -1,16 +1,16 @@
 ﻿<div align="center">
 
-<!-- Replace with your Code Chowkidar shield logo once generated -->
-<h1>ðŸ›¡ï¸ Code Chowkidar</h1>
 
-<p><strong>Your PR's personal chowkidar. Patrolling every commit â€” before your teammates do.</strong></p>
+<h1>ðŸ›¡ï¸ pr Inspector</h1>
+
+<p><strong>Your PR's personal inspector. Patrolling every commit â€” before your teammates do.</strong></p>
 
 <p>
-  <a href="https://github.com/Kunalmadoliya/Code-Chowkidar/blob/main/LICENSE">
+  <a href="https://github.com/Kunalmadoliya/pr-inspector/blob/main/LICENSE">
     <img src="https://img.shields.io/badge/license-MIT-orange.svg" alt="MIT License" />
   </a>
-  <a href="https://github.com/Kunalmadoliya/Code-Chowkidar/actions">
-    <img src="https://img.shields.io/github/actions/workflow/status/Kunalmadoliya/Code-Chowkidar/ci.yml?label=build" alt="Build Status" />
+  <a href="https://github.com/Kunalmadoliya/pr-inspector/actions">
+    <img src="https://img.shields.io/github/actions/workflow/status/Kunalmadoliya/pr-inspector/ci.yml?label=build" alt="Build Status" />
   </a>
   <img src="https://img.shields.io/badge/Next.js-16-black?logo=nextdotjs" alt="Next.js 16" />
   <img src="https://img.shields.io/badge/TypeScript-5-blue?logo=typescript" alt="TypeScript 5" />
@@ -21,17 +21,17 @@
 
 ---
 
-## What is Code Chowkidar?
+## What is pr Inspector?
 
-**Code Chowkidar** is an AI-powered code review platform that reviews your GitHub pull requests the moment they are opened.
+**pr Inspector** is an AI-powered code review platform that reviews your GitHub pull requests the moment they are opened.
 
 It detects bugs, identifies security vulnerabilities, suggests improvements, and posts its findings as inline PR comments â€” before your teammates even look at the diff.
 
-Think of it as a senior engineer who is always available, never tired, never in a meeting, and slightly opinionated about your variable names.
+Think of it as a senior engineer who is always available, never tired, never in a meeting, and with deep understanding of code quality patterns.
 
 ## Why it exists
 
-Manual code review is slow, inconsistent, and expensive. Senior engineers spend hours every week reviewing boilerplate issues that a machine could catch in seconds. Code Chowkidar handles the mechanical review work so your team can focus on architectural decisions, product thinking, and shipping.
+Manual code review is slow, inconsistent, and expensive. Senior engineers spend hours every week reviewing boilerplate issues that a machine could catch in seconds. pr Inspector handles the mechanical review work so your team can focus on architectural decisions, product thinking, and shipping.
 
 ## Who it is for
 
@@ -46,10 +46,10 @@ Manual code review is slow, inconsistent, and expensive. Senior engineers spend 
 
 - ðŸ› **Bug Detection** â€” Logic errors, null pointer risks, broken edge cases
 - ðŸ” **Security Scanning** â€” Hardcoded secrets, injection risks, vulnerable dependencies
-- ðŸ’¬ **Inline Suggestions** â€” Precise, contextual comments posted directly on the diff
-- âš¡ **Instant Reviews** â€” Results within 30 seconds of a PR being opened
+- 💬 **Inline Suggestions** â€” Precise, contextual comments posted directly on the diff
+- ⚡ **Instant Reviews** â€” Results within 30 seconds of a PR being opened
 - ðŸ” **GitHub Native** â€” Works as a GitHub App, posts comments where your team already works
-- ðŸ“Š **Quality Trends** â€” Track code quality improvements across repositories over time
+- 📊 **Quality Trends** â€” Track code quality improvements across repositories over time
 
 ---
 
@@ -73,23 +73,23 @@ Manual code review is slow, inconsistent, and expensive. Senior engineers spend 
 
 ```
 GitHub PR opened
-        â”‚
-        â–¼
-GitHub Webhook â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â–º /api/webhooks/github
-                                       â”‚
-                                       â–¼
+        │
+        ▼
+GitHub Webhook ──────────────► /api/webhooks/github
+                                       │
+                                       ▼
                                Verify webhook signature
-                                       â”‚
-                                       â–¼
+                                       │
+                                       ▼
                                Extract PR diff
-                                       â”‚
-                                       â–¼
+                                       │
+                                       ▼
                                AI Analysis (OpenAI / Gemini)
-                                       â”‚
-                                       â–¼
+                                       │
+                                       ▼
                                Parse findings
-                                       â”‚
-                                       â–¼
+                                       │
+                                       ▼
                                Post inline PR comments
                                via GitHub REST API
 ```
@@ -109,7 +109,7 @@ The core review pipeline:
 
 1. Go to [GitHub Developer Settings](https://github.com/settings/developers) â†’ **GitHub Apps** â†’ **New GitHub App**
 2. Configure the app:
-   - **Homepage URL**: Your app URL (e.g., `https://codechowkidar.com`)
+   - **Homepage URL**: Your app URL (e.g., `https://prinspector.com`)
    - **Webhook URL**: `https://yourdomain.com/api/webhooks/github`
    - **Webhook Secret**: Generate a random string and save it as `GITHUB_WEBHOOK_SECRET`
 3. **Required permissions**:
@@ -141,7 +141,7 @@ If using GitHub OAuth for user sign-in (separate from the GitHub App):
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/Kunalmadoliya/Code-Chowkidar.git
+git clone https://github.com/Kunalmadoliya/pr-inspector.git
 cd coderabbit
 ```
 
@@ -235,7 +235,7 @@ pnpm prisma studio
 3. Add all environment variables in the Vercel project settings
 4. Deploy
 
-Set `NEXT_PUBLIC_APP_URL` to your production domain (e.g., `https://codechowkidar.com`).
+Set `NEXT_PUBLIC_APP_URL` to your production domain (e.g., `https://prinspector.com`).
 
 ### Docker
 
@@ -246,51 +246,51 @@ A `Dockerfile` and `docker-compose.yml` are on the roadmap. PRs welcome.
 ## Folder Structure
 
 ```text
-code-chowkidar/
-â”œâ”€â”€ app/                    # Next.js App Router
-â”‚   â”œâ”€â”€ (auth)/             # Authentication pages (sign-in, sign-up)
-â”‚   â”‚   â”œâ”€â”€ layout.tsx      # Auth layout (split-panel)
-â”‚   â”‚   â”œâ”€â”€ signin/         # Sign-in page
-â”‚   â”‚   â””â”€â”€ signup/         # Sign-up page
-â”‚   â”œâ”€â”€ api/                # API routes
-â”‚   â”‚   â”œâ”€â”€ auth/           # Better Auth handler
-â”‚   â”‚   â””â”€â”€ webhooks/       # GitHub webhook handler (to be built)
-â”‚   â”œâ”€â”€ dashboard/          # Protected dashboard (to be built)
-â”‚   â”œâ”€â”€ globals.css         # Global styles and CSS variables
-â”‚   â”œâ”€â”€ layout.tsx          # Root layout (metadata, fonts, providers)
-â”‚   â”œâ”€â”€ manifest.ts         # Web App Manifest
-â”‚   â”œâ”€â”€ page.tsx            # Landing page
-â”‚   â”œâ”€â”€ robots.ts           # Robots.txt
-â”‚   â””â”€â”€ sitemap.ts          # Sitemap
-â”œâ”€â”€ components/
-â”‚   â”œâ”€â”€ providers/          # React context providers
-â”‚   â”‚   â”œâ”€â”€ query-provider.tsx
-â”‚   â”‚   â””â”€â”€ theme-provider.tsx
-â”‚   â””â”€â”€ ui/                 # Shadcn UI components (56 components)
-â”œâ”€â”€ hooks/                  # Custom React hooks
-â”‚   â””â”€â”€ use-mobile.ts
-â”œâ”€â”€ lib/                    # Library configurations
-â”‚   â”œâ”€â”€ auth-client.ts      # Better Auth client (browser)
-â”‚   â”œâ”€â”€ db.ts               # Prisma client singleton
-â”‚   â””â”€â”€ utils.ts            # cn() utility
-â”œâ”€â”€ prisma/
-â”‚   â”œâ”€â”€ migrations/         # Database migrations
-â”‚   â””â”€â”€ schema.prisma       # Database schema
-â”œâ”€â”€ public/                 # Static assets
-â”‚   â””â”€â”€ og-image.png        # Open Graph image
-â”œâ”€â”€ utils/
-â”‚   â””â”€â”€ auth.ts             # Better Auth server config
-â”œâ”€â”€ .env.example            # Environment variable template
-â”œâ”€â”€ .gitignore
-â”œâ”€â”€ CHANGELOG.md
-â”œâ”€â”€ CONTRIBUTING.md
-â”œâ”€â”€ LICENSE
-â”œâ”€â”€ README.md
-â”œâ”€â”€ SECURITY.md
-â”œâ”€â”€ next.config.ts
-â”œâ”€â”€ package.json
-â”œâ”€â”€ prisma.config.ts
-â””â”€â”€ tsconfig.json
+pr-inspector/
+├── app/                    # Next.js App Router
+│   ├── (auth)/             # Authentication pages (sign-in, sign-up)
+│   │   ├── layout.tsx      # Auth layout (split-panel)
+│   │   ├── signin/         # Sign-in page
+│   │   └── signup/         # Sign-up page
+│   ├── api/                # API routes
+│   │   ├── auth/           # Better Auth handler
+│   │   └── webhooks/       # GitHub webhook handler (to be built)
+│   ├── dashboard/          # Protected dashboard (to be built)
+│   ├── globals.css         # Global styles and CSS variables
+│   ├── layout.tsx          # Root layout (metadata, fonts, providers)
+│   ├── manifest.ts         # Web App Manifest
+│   ├── page.tsx            # Landing page
+│   ├── robots.ts           # Robots.txt
+│   └── sitemap.ts          # Sitemap
+├── components/
+│   ├── providers/          # React context providers
+│   │   ├── query-provider.tsx
+│   │   └── theme-provider.tsx
+│   └── ui/                 # Shadcn UI components (56 components)
+├── hooks/                  # Custom React hooks
+│   └── use-mobile.ts
+├── lib/                    # Library configurations
+│   ├── auth-client.ts      # Better Auth client (browser)
+│   ├── db.ts               # Prisma client singleton
+│   └── utils.ts            # cn() utility
+├── prisma/
+│   ├── migrations/         # Database migrations
+│   └── schema.prisma       # Database schema
+├── public/                 # Static assets
+│   └── og-image.png        # Open Graph image
+├── utils/
+│   └── auth.ts             # Better Auth server config
+├── .env.example            # Environment variable template
+├── .gitignore
+├── CHANGELOG.md
+├── CONTRIBUTING.md
+├── LICENSE
+├── README.md
+├── SECURITY.md
+├── next.config.ts
+├── package.json
+├── prisma.config.ts
+└── tsconfig.json
 ```
 
 ---
@@ -342,5 +342,5 @@ Quick guide:
 ---
 
 <div align="center">
-  <i>Built with â¤ï¸ and mild sarcasm by the Code Chowkidar team.</i>
+  <i>Built with â¤ï¸ and mild sarcasm by the pr Inspector team.</i>
 </div>

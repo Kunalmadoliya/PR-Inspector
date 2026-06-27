@@ -1,6 +1,6 @@
-﻿# Contributing to Code Chowkidar
+﻿# Contributing to pr Inspector
 
-First of all â€” thank you for taking the time to contribute. Every bug report, suggestion, and pull request makes the chowkidar sharper.
+First of all â€” thank you for taking the time to contribute. Every bug report, suggestion, and pull request makes the inspector sharper.
 
 ---
 
@@ -28,8 +28,8 @@ Be kind. Be constructive. Be professional. We do not tolerate harassment of any 
 1. **Fork** the repository on GitHub
 2. **Clone** your fork locally:
    ```bash
-   git clone https://github.com/YOUR_USERNAME/coderabbit.git
-   cd coderabbit
+   git clone https://github.com/YOUR_USERNAME/pr-inspector.git
+   cd pr-inspector
    ```
 3. **Install dependencies**:
    ```bash
@@ -102,13 +102,13 @@ chore(deps): upgrade Next.js to 16.3.0
 - **Describe your changes** clearly in the PR description.
 - **Link to issues** using `Closes #123` or `Fixes #123`.
 - **Keep PRs small.** Reviewers are humans (mostly). Large PRs take longer.
-- All PRs will be reviewed by Code Chowkidar itself before a human looks at it. Practice what we preach.
+- All PRs will be reviewed by pr Inspector itself before a human looks at it. Practice what we preach.
 
 ---
 
 ## Reporting Bugs
 
-Open a [GitHub Issue](https://github.com/Kunalmadoliya/Code-Chowkidar/issues/new) and include:
+Open a [GitHub Issue](https://github.com/Kunalmadoliya/pr-inspector/issues/new) and include:
 
 1. What you expected to happen
 2. What actually happened
@@ -120,7 +120,7 @@ Open a [GitHub Issue](https://github.com/Kunalmadoliya/Code-Chowkidar/issues/new
 
 ## Suggesting Features
 
-Open a [GitHub Issue](https://github.com/Kunalmadoliya/Code-Chowkidar/issues/new) with the label `enhancement`. Describe:
+Open a [GitHub Issue](https://github.com/Kunalmadoliya/pr-inspector/issues/new) with the label `enhancement`. Describe:
 
 - The problem you're trying to solve
 - Your proposed solution
